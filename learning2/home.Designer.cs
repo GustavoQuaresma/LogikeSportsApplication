@@ -1,7 +1,7 @@
 ﻿
 namespace learning2
 {
-    partial class Form1
+    partial class home
     {
         /// <summary>
         /// Variável de designer necessária.

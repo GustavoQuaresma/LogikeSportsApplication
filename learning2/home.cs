@@ -12,7 +12,7 @@ using MySql.Data.MySqlClient;
 
 namespace learning2
 {
-    public partial class Form1 : Form
+    public partial class home : Form
 
     {
         MySqlConnection conexao;
@@ -31,7 +31,7 @@ namespace learning2
         int nWidthEllipse, // height of ellipse
         int nHeightEllipse // width of ellipse
          );
-        public Form1()
+        public home()
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
