@@ -31,7 +31,7 @@ namespace learning2
         int nWidthEllipse, // height of ellipse
         int nHeightEllipse // width of ellipse
          );
-        public home()
+        public home(String txtLogin, String txtSenha)
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
@@ -39,9 +39,10 @@ namespace learning2
             try
             {
                 conexao = new MySqlConnection("Server = localhost; Database = logikgames; Uid = root; Pwd = bandtec;");
-                strSQL = "SELECT nome FROM usuario WHERE idUsuario = 1;";
+                strSQL = "SELECT nome FROM usuario WHERE login = '" + txtLogin + "'and senha = '" + txtSenha + "';";
                 comando = new MySqlCommand(strSQL, conexao);
                 conexao.Open();
+
                 dr = comando.ExecuteReader();
                 while (dr.Read())
                 {
@@ -59,7 +60,7 @@ namespace learning2
             try
             {
                 conexao = new MySqlConnection("Server = localhost; Database = logikgames; Uid = root; Pwd = bandtec;");
-                strSQL = "SELECT estilo FROM usuario WHERE idUsuario = 1;";
+                strSQL = "SELECT estilo FROM usuario WHERE login = '" + txtLogin + "'and senha = '" + txtSenha + "';";
                 comando = new MySqlCommand(strSQL, conexao);
                 conexao.Open();
                 dr = comando.ExecuteReader();
@@ -96,7 +97,7 @@ namespace learning2
 
         private void btnSair_Click(object sender, EventArgs e)
         {
-            Close();
+            Dispose();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -109,27 +110,7 @@ namespace learning2
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblName_Click(object sender, EventArgs e)
         {
 
         }

@@ -172,7 +172,6 @@ namespace learning2
             this.lblSub.TabIndex = 2;
             this.lblSub.Text = "Subtitle";
             this.lblSub.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSub.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblName
             // 
@@ -186,7 +185,6 @@ namespace learning2
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Username";
             this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblName.Click += new System.EventHandler(this.lblName_Click);
             // 
             // pictureBox1
             // 
@@ -198,7 +196,6 @@ namespace learning2
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -211,9 +208,8 @@ namespace learning2
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // Form1
+            // home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -223,7 +219,7 @@ namespace learning2
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
