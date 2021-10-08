@@ -11,7 +11,7 @@ using MySql.Data.MySqlClient;
 
 namespace learning2
 {
-    public partial class login : Form
+    public partial class Login : Form
     {
         MySqlConnection conexao;
         MySqlCommand comando;
@@ -19,7 +19,7 @@ namespace learning2
         MySqlDataReader dr;
         string strSQL;
 
-        public login()
+        public Login()
         {
             InitializeComponent();
         }
@@ -28,7 +28,7 @@ namespace learning2
         {
             try
             {
-                conexao = new MySqlConnection("Server = localhost; Database = logikgames; Uid = root; Pwd = bandtec;");
+                conexao = new MySqlConnection("Server = localhost; Database = logikeSports; Uid = root; Pwd = bandtec;");
                 strSQL = "SELECT count(*) FROM usuario WHERE login = '" + txtLogin.Text + "'and senha = '" + txtSenha.Text + "';";
                 comando = new MySqlCommand(strSQL, conexao);
                 conexao.Open();
@@ -39,14 +39,13 @@ namespace learning2
                 {
                     if (Convert.ToInt32(list.ItemArray[0]) > 0)
                     {
-                        MessageBox.Show("Usuario Valido");
-                        home home = new home(txtLogin.Text, txtSenha.Text);
+                        Home home = new Home(txtLogin.Text, txtSenha.Text);
                         home.Show();
                         this.SetVisibleCore(false);
                     }
                     else
                     {
-                        MessageBox.Show("Usuario Invalido");
+                        MessageBox.Show("Usuário Invalido");
                     }
                 }
             }
@@ -58,6 +57,12 @@ namespace learning2
             {
                 conexao.Close();
             }
+        }
+
+        private void btnCad_Click(object sender, EventArgs e)
+        {
+            Cadastro cadastro = new Cadastro();
+            cadastro.Show();
         }
     }
 }

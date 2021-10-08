@@ -12,7 +12,7 @@ using MySql.Data.MySqlClient;
 
 namespace learning2
 {
-    public partial class home : Form
+    public partial class Home : Form
 
     {
         MySqlConnection conexao;
@@ -31,14 +31,14 @@ namespace learning2
         int nWidthEllipse, // height of ellipse
         int nHeightEllipse // width of ellipse
          );
-        public home(String txtLogin, String txtSenha)
+        public Home(String txtLogin, String txtSenha)
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
             Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
             try
             {
-                conexao = new MySqlConnection("Server = localhost; Database = logikgames; Uid = root; Pwd = bandtec;");
+                conexao = new MySqlConnection("Server = localhost; Database = logikeSports; Uid = root; Pwd = bandtec;");
                 strSQL = "SELECT nome FROM usuario WHERE login = '" + txtLogin + "'and senha = '" + txtSenha + "';";
                 comando = new MySqlCommand(strSQL, conexao);
                 conexao.Open();
@@ -59,7 +59,7 @@ namespace learning2
             }
             try
             {
-                conexao = new MySqlConnection("Server = localhost; Database = logikgames; Uid = root; Pwd = bandtec;");
+                conexao = new MySqlConnection("Server = localhost; Database = logikeSports; Uid = root; Pwd = bandtec;");
                 strSQL = "SELECT estilo FROM usuario WHERE login = '" + txtLogin + "'and senha = '" + txtSenha + "';";
                 comando = new MySqlCommand(strSQL, conexao);
                 conexao.Open();
@@ -90,14 +90,10 @@ namespace learning2
             }
 
         }
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnSair_Click(object sender, EventArgs e)
         {
-            Dispose();
+            Application.Exit();
         }
 
         private void button3_Click(object sender, EventArgs e)
