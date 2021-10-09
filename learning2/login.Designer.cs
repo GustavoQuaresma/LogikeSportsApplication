@@ -39,7 +39,7 @@
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.Location = new System.Drawing.Point(2, 80);
+            this.label1.Location = new System.Drawing.Point(-129, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(485, 13);
             this.label1.TabIndex = 0;
@@ -49,7 +49,7 @@
             // txtLogin
             // 
             this.txtLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtLogin.Location = new System.Drawing.Point(144, 96);
+            this.txtLogin.Location = new System.Drawing.Point(13, 46);
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(197, 20);
             this.txtLogin.TabIndex = 1;
@@ -57,7 +57,7 @@
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.Location = new System.Drawing.Point(2, 130);
+            this.label2.Location = new System.Drawing.Point(-129, 80);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(485, 13);
             this.label2.TabIndex = 2;
@@ -67,7 +67,7 @@
             // txtSenha
             // 
             this.txtSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtSenha.Location = new System.Drawing.Point(144, 146);
+            this.txtSenha.Location = new System.Drawing.Point(13, 96);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(197, 20);
             this.txtSenha.TabIndex = 3;
@@ -75,7 +75,7 @@
             // btnEntrar
             // 
             this.btnEntrar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnEntrar.Location = new System.Drawing.Point(182, 172);
+            this.btnEntrar.Location = new System.Drawing.Point(51, 122);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(120, 31);
             this.btnEntrar.TabIndex = 4;
@@ -86,7 +86,7 @@
             // btnCad
             // 
             this.btnCad.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnCad.Location = new System.Drawing.Point(205, 209);
+            this.btnCad.Location = new System.Drawing.Point(74, 159);
             this.btnCad.Name = "btnCad";
             this.btnCad.Size = new System.Drawing.Size(75, 23);
             this.btnCad.TabIndex = 5;
@@ -98,7 +98,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(487, 302);
+            this.ClientSize = new System.Drawing.Size(225, 203);
             this.Controls.Add(this.btnCad);
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.txtSenha);
